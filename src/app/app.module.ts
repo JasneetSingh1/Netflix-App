@@ -7,6 +7,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './core/component/header/header.component';
 import { BannerComponent } from './core/component/banner/banner.component';
+import { HttpClientModule, provideHttpClient } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,11 @@ import { BannerComponent } from './core/component/banner/banner.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  exports: [RouterModule],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
