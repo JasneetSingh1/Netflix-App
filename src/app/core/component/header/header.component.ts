@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  navList = ['Home', 'TV Shows', 'Movies', 'Recently Added', ' My List']
 }
