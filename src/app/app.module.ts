@@ -9,6 +9,7 @@ import { HeaderComponent } from './core/component/header/header.component';
 import { BannerComponent } from './core/component/banner/banner.component';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { MovieSliderComponent } from './shared/component/movie-slider/movie-slider.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RouterModule } from '@angular/router';
     LoginComponent,
     HomeComponent,
     HeaderComponent,
-    BannerComponent
+    BannerComponent,
+    MovieSliderComponent
   ],
   imports: [
     BrowserModule,
