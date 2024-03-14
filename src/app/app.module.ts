@@ -13,6 +13,9 @@ import { MovieSliderComponent } from './shared/component/movie-slider/movie-slid
 import { DescriptionPipe } from './shared/pipe/description.pipe';
 import { ImagePipe } from './shared/pipe/image.pipe';
 import { BrowserAnimationsModule, provideAnimations} from '@angular/platform-browser/animations';
+import { MoviesComponent } from './pages/movies/movies.component';
+import { TvshowsComponent } from './pages/tvshows/tvshows.component';
+import { RecentlyAddedComponent } from './pages/recently-added/recently-added.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { BrowserAnimationsModule, provideAnimations} from '@angular/platform-bro
     BannerComponent,
     MovieSliderComponent,
     DescriptionPipe,
-    ImagePipe
+    ImagePipe,
+    MoviesComponent,
+    TvshowsComponent,
+    RecentlyAddedComponent
   ],
   imports: [
     BrowserModule,

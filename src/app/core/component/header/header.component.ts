@@ -9,5 +9,5 @@ export class HeaderComponent {
 
   @Input() userName: string = "";
   @Input() userImg: string = "";
-  navList = ['Home', 'TV Shows', 'Movies', 'Recently Added', ' My List']
+  navList = ['Home', 'TV Shows', 'Movies', 'Recently Added']
 }
