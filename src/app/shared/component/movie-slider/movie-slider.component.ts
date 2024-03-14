@@ -37,7 +37,7 @@ export class MovieSliderComponent implements OnInit, AfterViewInit {
     return new Swiper(this.swiperCOntainer.nativeElement,{
       slidesPerView: 2,
       slidesPerGroup: 2,
-      centeredSlides: true,
+      centeredSlides: false,
       loop: true,
       breakpoints: {
         600: {
