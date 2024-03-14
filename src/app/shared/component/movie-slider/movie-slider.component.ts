@@ -1,16 +1,23 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import Swiper from 'swiper';
+import { IVideoContent } from '../../model/video-content.interface';
 
 @Component({
   selector: 'app-movie-slider',
   templateUrl: './movie-slider.component.html',
   styleUrls: ['./movie-slider.component.css']
 })
-export class MovieSliderComponent implements OnInit {
+export class MovieSliderComponent implements OnInit, AfterViewInit {
+  
+  @Input() videoContents: IVideoContent[] = [];
+  @Input() title: string = "";
   
   @ViewChild('swiperContainer') swiperCOntainer!: ElementRef
  
- 
+  ngAfterViewInit(): void {
+   this.inItSwiper();
+  }
+  
   ngOnInit(): void {
     
   }

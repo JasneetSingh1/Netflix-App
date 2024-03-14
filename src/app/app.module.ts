@@ -10,6 +10,7 @@ import { BannerComponent } from './core/component/banner/banner.component';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { MovieSliderComponent } from './shared/component/movie-slider/movie-slider.component';
+import { DescriptionPipe } from './shared/pipe/description.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MovieSliderComponent } from './shared/component/movie-slider/movie-slid
     HomeComponent,
     HeaderComponent,
     BannerComponent,
-    MovieSliderComponent
+    MovieSliderComponent,
+    DescriptionPipe
   ],
   imports: [
     BrowserModule,

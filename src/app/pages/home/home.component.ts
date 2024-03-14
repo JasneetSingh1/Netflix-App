@@ -1,5 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { HeaderComponent } from 'src/app/core/component/header/header.component';
+import { IVideoContent } from 'src/app/shared/model/video-content.interface';
 import { AuthService } from 'src/app/shared/service/auth.service';
 import { MovieService } from 'src/app/shared/service/movie.service';
 
@@ -12,8 +13,9 @@ import { MovieService } from 'src/app/shared/service/movie.service';
 })
 export class HomeComponent implements OnInit{
   
-
+  popularMovies: IVideoContent[] = [];
   constructor(private movieService: MovieService, private auth: AuthService){
+    
 
   }
 
@@ -23,7 +25,8 @@ export class HomeComponent implements OnInit{
   
   ngOnInit(): void {
     this.movieService.getMovies().subscribe(res => {
-      console.log(res)
+      console.log(res);
+      this.popularMovies = res.results;
     })
   }
   
