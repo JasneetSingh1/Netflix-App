@@ -2,4 +2,14 @@
 
 <app-banner></app-banner>
 
-<app-movie-slider [videoContents]="popularMovies" [title]="'Popular Movies'"></app-movie-slider>
+<app-movie-slider [title]="'Popular on Netflix'" [videoContents]="movies"></app-movie-slider>
+
+<app-movie-slider [title]="'Trending TV shows'" [videoContents]="tvShows" ></app-movie-slider>
+
+<app-movie-slider [title]="'Now Playing Movies'" [videoContents]="nowPlayingMovies" ></app-movie-slider>
+
+
+
+<app-movie-slider [title]="'Top Rated Movies'" [videoContents]="topRatedMovies" ></app-movie-slider>
+
+<app-movie-slider [title]="'Upcoming Movies'" [videoContents]="upcomingMovies" ></app-movie-slider>

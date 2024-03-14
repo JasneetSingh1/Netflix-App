@@ -35,7 +35,7 @@ export class MovieSliderComponent implements OnInit, AfterViewInit {
 
   private inItSwiper(){
     return new Swiper(this.swiperCOntainer.nativeElement,{
-      slidesPerView: 3,
+      slidesPerView: 2,
       slidesPerGroup: 2,
       centeredSlides: true,
       loop: true,
@@ -53,20 +53,20 @@ export class MovieSliderComponent implements OnInit, AfterViewInit {
           centeredSlides: true,
         },
         1200: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
+          slidesPerView: 2,
+          slidesPerGroup: 2,
           spaceBetween: 5,
           centeredSlides: false,
         },
         1500: {
-          slidesPerView: 5,
-          slidesPerGroup: 5,
+          slidesPerView: 2,
+          slidesPerGroup: 2,
           spaceBetween: 5,
           centeredSlides: false,
         },
         1800: {
           slidesPerView: 5,
-          slidesPerGroup: 6,
+          slidesPerGroup: 2,
           spaceBetween: 5,
           centeredSlides: false,
         }

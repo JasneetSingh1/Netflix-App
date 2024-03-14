@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
 import { MovieSliderComponent } from './shared/component/movie-slider/movie-slider.component';
 import { DescriptionPipe } from './shared/pipe/description.pipe';
 import { ImagePipe } from './shared/pipe/image.pipe';
-import { provideAnimations} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, provideAnimations} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { provideAnimations} from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-   
+    BrowserAnimationsModule,
   ],
   exports: [RouterModule],
   
