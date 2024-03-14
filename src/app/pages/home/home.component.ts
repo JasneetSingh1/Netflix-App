@@ -47,8 +47,8 @@ export class HomeComponent implements OnInit{
     forkJoin(this.sources)
     .pipe(
       map(([movies, tvShows, nowPlaying, upcoming, topRated])=>{
-        this.bannerDetail$ = this.movieService.getBannerDetail(movies.results[3].id);
-        this.bannerVideo$ = this.movieService.getBannerVideo(movies.results[3].id);
+        this.bannerDetail$ = this.movieService.getBannerDetail(movies.results[1].id);
+        this.bannerVideo$ = this.movieService.getBannerVideo(movies.results[1].id);
         return {movies, tvShows, nowPlaying, upcoming, topRated}
       })
     ).subscribe((res:any)=>{
