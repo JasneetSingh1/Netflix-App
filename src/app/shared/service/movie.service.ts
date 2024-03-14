@@ -68,4 +68,5 @@ export class MovieService {
     return this.http.get<any>('https://api.themoviedb.org/3/movie/upcoming', options)
   }
 
+
 }

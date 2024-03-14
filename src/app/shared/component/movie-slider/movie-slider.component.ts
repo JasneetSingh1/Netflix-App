@@ -21,7 +21,7 @@ export class MovieSliderComponent implements OnInit, AfterViewInit {
   @Input() videoContents: IVideoContent[] = [];
   @Input() title: string = "";
   
-  @ViewChild('swiperContainer') swiperCOntainer!: ElementRef
+  @ViewChild('swiperContainer') swiperContainer!: ElementRef
 
   selectedContent: string | null = null;
  
@@ -34,7 +34,7 @@ export class MovieSliderComponent implements OnInit, AfterViewInit {
   }
 
   private inItSwiper(){
-    return new Swiper(this.swiperCOntainer.nativeElement,{
+    return new Swiper(this.swiperContainer.nativeElement,{
       slidesPerView: 3,
       slidesPerGroup: 2,
       centeredSlides: false,

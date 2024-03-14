@@ -16,6 +16,8 @@ import { BrowserAnimationsModule, provideAnimations} from '@angular/platform-bro
 import { MoviesComponent } from './pages/movies/movies.component';
 import { TvshowsComponent } from './pages/tvshows/tvshows.component';
 import { RecentlyAddedComponent } from './pages/recently-added/recently-added.component';
+import { BrowseComponent } from './shared/component/browse/browse.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { RecentlyAddedComponent } from './pages/recently-added/recently-added.co
     ImagePipe,
     MoviesComponent,
     TvshowsComponent,
-    RecentlyAddedComponent
+    RecentlyAddedComponent,
+    BrowseComponent,
+
   ],
   imports: [
     BrowserModule,
