@@ -11,6 +11,7 @@ import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { MovieSliderComponent } from './shared/component/movie-slider/movie-slider.component';
 import { DescriptionPipe } from './shared/pipe/description.pipe';
+import { ImagePipe } from './shared/pipe/image.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DescriptionPipe } from './shared/pipe/description.pipe';
     HeaderComponent,
     BannerComponent,
     MovieSliderComponent,
-    DescriptionPipe
+    DescriptionPipe,
+    ImagePipe
   ],
   imports: [
     BrowserModule,
