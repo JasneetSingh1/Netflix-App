@@ -2,9 +2,15 @@
 
     <div class="flex gap-5">
         <img width="110px" src="assets/pngwing.com.png" alt="Netflix Logo">
-        <ul class="flex items-center" *ngFor="let item of navList">
+        <ul class="flex items-center gap-4">
             <li class="text-neutral-200 cursor-pointer text-sm font-medium
-             hover:text-gray-400 transition-[1s]">{{item}}</li>
+             hover:text-gray-400 transition-[1s]"><a href="home">Home</a></li>
+             <li class="text-neutral-200 cursor-pointer text-sm font-medium
+             hover:text-gray-400 transition-[1s]"><a href="movies">Movies</a></li>
+             <li class="text-neutral-200 cursor-pointer text-sm font-medium
+             hover:text-gray-400 transition-[1s]"><a href="tv-shows">TV Shows</a></li>
+             <li class="text-neutral-200 cursor-pointer text-sm font-medium
+             hover:text-gray-400 transition-[1s]"><a href="recently-added">Recently Added</a></li>
         </ul>
     </div>
 
